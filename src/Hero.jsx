@@ -13,7 +13,9 @@ export default function Hero() {
       <p className="Hero__text">
         <span className="Hero__text--accent">T</span>hank you for visiting.{" "}
         <span className="Hero__text--accent">F</span>eel free to{" "}
-        <span className="Hero__text--italic">explore</span>.
+        <a href="#project1">
+          <span className="Hero__text--italic">explore</span>.
+        </a>
         <span className="Hero__arrow">↓</span>
       </p>
     </section>

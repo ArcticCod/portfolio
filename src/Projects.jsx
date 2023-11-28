@@ -17,6 +17,8 @@ export default function Projects() {
             <a
               className="view-link"
               href="https://wild-alaska-weather.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
             >
               View
             </a>
@@ -44,6 +46,8 @@ export default function Projects() {
             <a
               className="view-link"
               href="https://etch-a-sketch-wildalaska.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
             >
               View
             </a>
@@ -60,7 +64,7 @@ export default function Projects() {
       </section>
       <section className="Project Left">
         <CircleText
-          string={"Project              Project            Project           "}
+          string={"Tic | Tac | Crow |"}
           image={"/facebook-cropped.png"}
         />
         <p className="Project__text">
@@ -71,6 +75,8 @@ export default function Projects() {
             <a
               className="view-link"
               href="https://tic-tac-toe-wild-alaska.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
             >
               View
             </a>
@@ -97,6 +103,8 @@ export default function Projects() {
             <a
               className="view-link"
               href="https://wildalaska-memory-game.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
             >
               View
             </a>
