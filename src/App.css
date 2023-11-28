@@ -1,0 +1,253 @@
+@font-face {
+  font-family: "PPNeueMachina-Regular";
+  src:
+    local("PPNeueMachina-Regular"),
+    url("./fonts/PPNeueMachina-Regular.otf") format("opentype");
+}
+
+* {
+  font-family: "PPNeueMachina-Regular";
+  color: #fefefe;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #121212;
+}
+
+.Header {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(255, 255, 255, 0.05),
+    transparent
+  );
+  width: 100%;
+  padding: 16px 36px;
+  font-size: 14px;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+.Header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.Header__logo--accent {
+  font-size: 24px;
+  font-weight: bold;
+}
+.Header__links {
+  display: flex;
+  list-style: none;
+  gap: 16px;
+}
+.Header__links__link,
+.Header__links__link * {
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: lowercase;
+  transition: all 0.3s;
+}
+.Header__links__link:hover {
+  transform: scale(1.1);
+}
+.CircleText {
+  position: relative;
+  width: 1px;
+  transform: translateX(47.5%);
+  width: 400px;
+  height: 400px;
+}
+.CircleText__container {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+.CircleText__outer {
+  animation: spinner linear infinite 60s;
+  width: 400px;
+  height: 400px;
+}
+
+.CircleText__img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+}
+
+.CircleText__span {
+  font-size: 14px;
+  height: 200px;
+  position: absolute;
+  width: 20px;
+  left: 0;
+  top: 0;
+  transform-origin: bottom center;
+}
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.Hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 72px;
+  padding: 72px 36px;
+  height: 100vh;
+}
+.Hero__text--accent {
+  font-size: 24px;
+  font-weight: bold;
+}
+.Hero__text {
+  position: relative;
+  color: #bebebe;
+}
+.Hero__arrow {
+  position: absolute;
+  bottom: -22px;
+  right: -10px;
+  font-size: 32px;
+}
+.Hero__text--italic {
+  font-style: italic;
+  color: #fefefe;
+}
+.Project.Left {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 72px 36px;
+  height: 100vh;
+  margin-left: 75px;
+  margin-right: 75px;
+}
+.Project.Right {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 72px 36px;
+  height: 100vh;
+  margin-left: 75px;
+  margin-right: 75px;
+}
+.Project__text--accent {
+  font-size: 28px;
+  font-weight: bold;
+}
+.Project__text {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+  color: #bebebe;
+  width: 530px;
+}
+.Project__arrow {
+  position: absolute;
+  bottom: -22px;
+  right: -10px;
+  font-size: 32px;
+}
+.Project__text--italic {
+  font-style: italic;
+  color: #fefefe;
+}
+.text-header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+* {
+  scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 1250px) {
+  .Header__links {
+    display: none;
+  }
+  .Project.Left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px;
+    height: 100vh;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .Project.Right {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 0px;
+    height: 100vh;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .proj-container {
+    margin: 0 auto;
+  }
+  .Project__text {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+    color: #bebebe;
+    width: 100%;
+  }
+  .text-body {
+    text-align: center;
+  }
+  .text-header {
+    justify-content: space-around;
+  }
+  .Hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 72px;
+    padding: 0px 0px;
+    height: 100vh;
+  }
+  .Header {
+    background-image: linear-gradient(
+      to bottom,
+      rgb(255, 255, 255, 0.05),
+      transparent
+    );
+    width: 80%;
+    padding: 16px 0px;
+    font-size: 14px;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+  }
+}
