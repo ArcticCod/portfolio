@@ -1,7 +1,13 @@
 export default function Contact() {
   return (
     <div id={"about"} className="contact">
-      <form data-netlify="true" netlify-honeypot="name" name="contact">
+      <div className="form-title">contact me:</div>
+      <form
+        className="contact-form"
+        data-netlify="true"
+        netlify-honeypot="name"
+        name="contact"
+      >
         <input type="hidden" name="form-name" value="contact" />
         <input
           style={{ display: "none" }}
@@ -10,7 +16,7 @@ export default function Contact() {
           name="name"
           autoComplete="off"
         />
-        <div>
+        <div className="inputs">
           <label htmlFor="first_name">First Name</label>
           <input
             type="text"
@@ -19,7 +25,7 @@ export default function Contact() {
             placeholder="First Name"
           />
         </div>
-        <div>
+        <div className="inputs">
           <label htmlFor="first_name">Last Name</label>
           <input
             type="text"
@@ -28,7 +34,7 @@ export default function Contact() {
             placeholder="Last Name"
           />
         </div>
-        <div>
+        <div className="inputs">
           <label htmlFor="email">Email Address</label>
           <input
             type="email"
@@ -37,7 +43,7 @@ export default function Contact() {
             placeholder="Email Address"
           />
         </div>
-        <div>
+        <div className="inputs">
           <label htmlFor="first_name">Phone Number</label>
           <input
             type="text"
@@ -46,7 +52,7 @@ export default function Contact() {
             placeholder="Phone Number"
           />
         </div>
-        <div>
+        <div className="inputs">
           <label htmlFor="first_name">Message</label>
           <textarea
             type="text"
@@ -55,7 +61,9 @@ export default function Contact() {
             placeholder="Message"
           ></textarea>
         </div>
-        <button type="submit">Submit</button>
+        <button className="submit-button" type="submit">
+          Submit
+        </button>
       </form>
     </div>
   );

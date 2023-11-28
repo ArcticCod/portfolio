@@ -5,7 +5,7 @@ export default function Projects() {
     <div className="proj-container">
       <section id="project1" className="Project Left">
         <CircleText
-          string={"Project | Project | Project | "}
+          string={"React | Weather | Forecast | "}
           image={"/facebook-cropped.png"}
         />
 
@@ -35,8 +35,8 @@ export default function Projects() {
       </section>
       <section className="Project Right">
         <CircleText
-          string={"Project | Project | Project | "}
-          image={"/facebook-cropped.png"}
+          string={"Etch | a | Sketch | "}
+          image={"public/Screenshot 2023-11-28 144034.png"}
         />
         <p className="Project__text">
           <div className="text-header">
@@ -92,7 +92,7 @@ export default function Projects() {
       </section>
       <section className="Project Right">
         <CircleText
-          string={"Project | Project | Project | "}
+          string={"Memory | Crow | Cards | "}
           image={"/facebook-cropped.png"}
         />
         <p className="Project__text">
