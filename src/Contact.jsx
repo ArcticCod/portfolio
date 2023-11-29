@@ -2,13 +2,7 @@ export default function Contact() {
   return (
     <div id={"about"} className="contact">
       <div className="form-title">contact me:</div>
-      <form
-        method="POST"
-        className="contact-form"
-        data-netlify="true"
-        netlify-honeypot="name"
-        name="contact"
-      >
+      <form action="POST" name="contact" data-netlify="true">
         <input type="hidden" name="form-name" value="contact" />
         <input
           style={{ display: "none" }}
