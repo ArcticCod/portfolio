@@ -36,7 +36,7 @@ export default function Projects() {
       <section className="Project Right">
         <CircleText
           string={"Etch | a | Sketch | "}
-          image={"public/Screenshot 2023-11-28 144034.png"}
+          image={"/Screenshot 2023-11-28 144034.png"}
         />
         <p className="Project__text">
           <div className="text-header">
