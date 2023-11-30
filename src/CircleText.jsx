@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-export default function CircleText({ string, image }) {
+export default function CircleText({ link, string, image }) {
   const wordArr = string.split(" ");
   const spaces = wordArr.length;
   const strippedString = string.replaceAll(" ", "");
@@ -33,7 +33,9 @@ export default function CircleText({ string, image }) {
           ))}
         </h1>
       </div>
-      <img className="CircleText__img" src={image} />
+      <a href={link} target="_blank" rel="noreferrer">
+        <img className="CircleText__img" src={image} />
+      </a>
     </div>
   );
 }

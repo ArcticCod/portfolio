@@ -7,6 +7,7 @@ export default function Projects() {
         <CircleText
           string={"React | Weather | Forecast | "}
           image={"/weatherApp.png"}
+          link={"https://wild-alaska-weather.netlify.app/"}
         />
 
         <p className="Project__text">
@@ -37,6 +38,7 @@ export default function Projects() {
         <CircleText
           string={"Etch | a | Sketch | "}
           image={"/Screenshot 2023-11-28 144034.png"}
+          link={"https://etch-a-sketch-wildalaska.netlify.app/"}
         />
         <p className="Project__text">
           <div className="text-header">
@@ -63,7 +65,11 @@ export default function Projects() {
         </p>
       </section>
       <section className="Project Left">
-        <CircleText string={"Tic | Tac | Crow |"} image={"/tic tac toe.jpg"} />
+        <CircleText
+          link={"https://tic-tac-toe-wild-alaska.netlify.app/"}
+          string={"Tic | Tac | Crow |"}
+          image={"/tic tac toe.jpg"}
+        />
         <p className="Project__text">
           <div className="text-header">
             <p>
@@ -91,6 +97,7 @@ export default function Projects() {
         <CircleText
           string={"React | Memory | Cards |"}
           image={"/memory crows.jpg"}
+          link={"https://wildalaska-memory-game.netlify.app/"}
         />
         <p className="Project__text">
           <div className="text-header">
