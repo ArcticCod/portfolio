@@ -8,7 +8,7 @@ export default function Hero() {
     <section id="home" className="Hero">
       <CircleText
         string={"software developer | javascript expert | ux ui enthusiast | "}
-        image={"/facebook-cropped.png"}
+        image={"/photo jan 07, 15 43 35.jpg"}
       />
       <p className="Hero__text">
         <span className="Hero__text--accent">T</span>hank you for visiting.{" "}
